@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Flight_booking.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <style>
+        .dropbtn {
+            background-color:red;
+            
+            color:white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor:pointer;
+            margin-right:15px;
+            margin-top:60px;
+        }
+
+        .dropdown {
+            position: relative;
+            display:normal;
+        }
+
+        .dropdown-content {
+            display:none;
+            position:relative;
+            background-color:gold;
+            min-width: 160px;
+            box-shadow:initial;
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 8px;
+                text-decoration: none;
+                display:normal;
+            }
+
+                .dropdown-content a:hover {
+                    background-color:blue;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display:flex;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color:chocolate;
+        }
+
+        ul {
+    list-style-type:circle;
+    margin:auto;
+    padding:0;
+    overflow:auto;
+    background-color:red;
+    
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:dashed;
+}
+
+li a:hover {
+    background-color:coral;
+}
+
+    </style>
+
+
+    
+	<title>UDAN - Ude Desh ka Aam Nagrik</title>
+    <link rel="icon" href="udaan_logo.png" />
+    <link rel="stylesheet" href="css/style.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Flight Ticket Booking  Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+ 
+    <div>
+         <ul>
+        <li> <a href="index.html"> <img src="images/udaan_logo.png" style="width:200px;height:80px;" /></a></li>
+
+        <li>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </li>
+        <li><div class="dropdown"><button class="dropbtn">Home▼</button><div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+</div></div></li>
+
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">News▼</button><div class="dropdown-content">
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Contact▼</button><div class="dropdown-content">
+                    <a href="#">Link 7</a>
+                    <a href="#">Link 8</a>
+                    <a href="#">Link 9</a>
+                </div>
+            </div>
+        </li>
+
+     
+        
+
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Help▼</button><div class="dropdown-content">
+                    <a href="#">Link 10</a>
+                    <a href="#">Link 11</a>
+                    <a href="#">Link 12</a>
+                </div>
+            </div>
+        </li>
+        
+        <li>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </li>
+    
+<li>
+    <div class="dropdown">
+        <button class="dropbtn">Sign-in</button>
+    </div>
+</li>
+
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Sign up</button>
+            </div>
+        </li>
+
+    </ul>
+    </div>    
+    </form>
+</body>
+</html>
