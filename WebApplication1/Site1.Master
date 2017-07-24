@@ -1,12 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Flight_booking.Site1" %>
 
+<asp:ContentPlaceHolder ID="head" runat="server">
+
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    
+    
       <style>
         .dropbtn {
             background-color:red;
@@ -95,10 +98,11 @@ li a:hover {
 
 </head>
 <body>
+    
+            
     <form id="form1" runat="server">
        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+            
         </div>
  
     <div>
@@ -170,3 +174,4 @@ li a:hover {
     </form>
 </body>
 </html>
+    </asp:ContentPlaceHolder>
